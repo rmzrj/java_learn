@@ -1,14 +1,17 @@
-import java.util.Scanner;  // Import the Scanner class
+import java.util.ArrayList;
+import java.util.Collection;
 
 public class Demo {
   public static void main(String[] args) {
-    // Create a new scanner object
-    Scanner myObj = new Scanner(System.in);  // Create a Scanner object
-    System.out.println("Enter username");
+    Collection<Integer> nums = new ArrayList<Integer>();
+    nums.add(5);
+    nums.add(3);
+    nums.add(19);
 
-    String userName = myObj.nextLine();  // Read user input
-    System.out.println("Username is: " + userName);  // Output user input
-  }         
+  for( int n  : nums){
+    System.out.println(n);
+  }
+}
 }            
                  
          
